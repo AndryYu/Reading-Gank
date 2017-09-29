@@ -1,0 +1,3 @@
+rootProject.name = 'ReadingGank'
+
+include ':app'
