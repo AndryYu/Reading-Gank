@@ -17,7 +17,7 @@ import Footer from './Footer';
 import EmptyView from './EmptyView';
 import ItemListView from './ItemListView';
 
-require('moment/local/zh-cn');
+require('moment/locale/zh-cn');
 
 const propTypes = {
     readActions: PropTypes.object,
@@ -35,7 +35,7 @@ class Main extends React.Component{
             dataSource: new ListView.DataSource({
                 rowHasChanged:(row1, row2) => row1 !== row2
             }),
-            typeId:[],
+            typeIds:[],
             typeList:{}
         };
     }
@@ -47,7 +47,7 @@ class Main extends React.Component{
                 readActions.requestArticleList(false, true, typeId);
                 pages.push(1);
             });
-            this.state({
+            this.setState({
                 typeIds
             });
         });
@@ -63,7 +63,7 @@ class Main extends React.Component{
                     });
                     store.get('typeList')
                         .then(typeList =>
-                        this.state({
+                        this.setState({
                             typeIds,
                             typeList
                         }));

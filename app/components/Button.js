@@ -7,7 +7,7 @@ import {
 
 const propTypes = {
   onPress:PropTypes.func,
-  disabled:propTypes.bool,
+  disabled:PropTypes.bool,
   style:Text.propTypes.style,
   containerStyle:ViewPropTypes.style,
   text:PropTypes.string,

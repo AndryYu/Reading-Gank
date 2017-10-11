@@ -1,5 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {
+    Image
+} from 'react-native';
 import { bindActionCreators } from 'redux';
 import Icon from 'react-native-vector-icons/Ionicons';
 import * as categoryCreators from '../actions/category';
@@ -9,7 +12,8 @@ class CategoryContainer extends React.Component{
     static navigationOptions = ({ navigation }) => ({
         title:'分类',
         tabBarIcon:({ tintColor }) =>
-            <Icon name="md-pricetags" size={25} color={tintColor}/>,
+            //<Icon name="md-pricetags" size={25} color={tintColor}/>,
+            <Image source={require('../img/tabIcon/ic_home_tab_collect.png')} style={[{tintColor: tintColor}]}/>,
         headerRight:
             navigation.state.params !== undefined && navigation.state.params.isFirst
                 ? null

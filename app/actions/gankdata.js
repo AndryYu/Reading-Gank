@@ -10,7 +10,7 @@ export function requestGankdataList(
     return {
         type:types.REQUEST_GANKDATA_LIST,
         isRefreshing,
-        isLoading,
+        loading,
         isLoadMore,
         typeId,
         page

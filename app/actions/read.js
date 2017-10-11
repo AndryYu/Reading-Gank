@@ -10,7 +10,7 @@ export function requestArticleList(
     return {
         type:types.REQUEST_ARTICLE_LIST,
         isRefreshing,
-        isLoading, 
+        loading,
         isLoadMore,
         typeId,
         page

@@ -3,7 +3,8 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -12,7 +13,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
      static navigationOptions = ({ navigation }) => ({
          title: '干货',
          tabBarIcon: ({tintColor}) =>
-             <Icon name="md-thumbs-up" size={25} color={tintColor}/>
+             //<Icon name="md-thumbs-up" size={25} color={tintColor}/>
+             <Image source={require('../../img/tabIcon/ic_home_tab_girl.png')} style={[{tintColor: tintColor}]}/>
      });
 
     render() {

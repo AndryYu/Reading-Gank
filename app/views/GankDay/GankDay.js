@@ -3,14 +3,16 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Image
 } from 'react-native';
 
 class GankDay extends React.Component {
     static navigationOptions = {
         title: '推荐',
         tabBarIcon: ({tintColor}) =>
-            <Icon name="md-information-circle" size={25} color={tintColor}/>
+            //<Icon name="md-information-circle" size={25} color={tintColor}/>
+            <Image source={require('../../img/tabIcon/ic_home_tab_rec.png')} style={[{tintColor: tintColor}]}/>,
     };
 
     render() {

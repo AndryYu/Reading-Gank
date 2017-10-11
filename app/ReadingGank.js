@@ -11,7 +11,7 @@ store.runSaga(rootSaga);
 
 
 const App = () =>(
-   <Provider>
+   <Provider store={store}>
        <Index/>
    </Provider>
 );
