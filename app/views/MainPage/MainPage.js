@@ -178,10 +178,14 @@ class Main extends React.Component{
           <View style={styles.container}>
               <ScrollableTabView
                 renderTabBar={() =>
-                <DefaultTabBar tabStyle={styles.tab} textStyle={styles.tabText} />}
+                    <DefaultTabBar tabStyle={styles.tab} textStyle={styles.tabText} />}
+                //整个tab这一栏的背景颜色
                 tabBarBackgroundColor="#fcfcfc"
+                //Tab选中时下方横线的颜色
                 tabBarUnderlineStyle={styles.tabBarUnderline}
+                //选中Tab的文字颜色
                 tabBarActiveTextColor="#3e9ce9"
+                //未选中Tab的文字颜色
                 tabBarInactiveTextColor="#aaaaaa"
               >
                   {content}
